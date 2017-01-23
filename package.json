@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jnovack/homebridge-better-http-rgb.git"
+    "url": "git://github.com/AchimPieters/HomeBridge-NeoPixel.git"
   },
   "scripts": {
     "lint": "grunt lint",
