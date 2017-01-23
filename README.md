@@ -15,6 +15,7 @@ callback for getting and setting the following characteristics to Homekit:
 2. Install HomeBridge-NeoPixel using: `npm install -g HomeBridge-NeoPixel`
 3. Update your configuration file.  See below for examples.
 
+npm install git://github.com/<repo-owner>/<repo>.git
 
 # Configuration
 
@@ -185,25 +186,3 @@ the event someone's HomeKit/HomeBridge is on a different server, or in my case,
 there are 4-5 different Raspberry Pi's running blinksticks around my house.
 
 
-# Why 'better'?
-
-As we all know, the word 'better' is subjective, so why put it in the title? I
-decided to call it 'better' because it is intended to be a 'better' example of
-how to code, not in the way of a 'better' or more feature-rich project.
-
-There's thousands of projects on github that are just thrown together, half-
-working, or abandoned and I wanted to make sure that my little contribution to
-the open-source movement gave more than just code.
-
-The 'better'-project goals are to make sure there is documentation, tests, code
-and style standards. While I may have missed a few spots, my intention is to
-ensure that those exist.  There is value in documentation, style and testing;
-and I want to serve as an example to younger (or newer) coders that may be
-trying to hack apart this project.
-
-
-# TODO
-
-* Perhaps validation of some sort?
-* _httprequest should check for non-200
-* Better error handling of config errors
