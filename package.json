@@ -1,7 +1,7 @@
 {
   "name": "HomeBridge-NeoPixel",
   "version": "3.0.2",
-  "description": "Homebridge plugin to control a NeoPixel strip over a ESP8266-E12.",
+  "description": "Homebridge plugin to control a NeoPixel strip over a ESP8266-12E.",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
