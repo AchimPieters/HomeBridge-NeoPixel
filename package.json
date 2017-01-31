@@ -1,7 +1,7 @@
 {
-  "name": "HomeBridge-NeoPixel",
-  "version": "3.0.2",
-  "description": "Homebridge plugin to control a NeoPixel strip over a ESP8266-12E.",
+  "name": "homebridge-neopixel",
+  "version": "3.2.0",
+  "description": "Homebridge plugin to control a NeoPixel Strip.",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
@@ -12,7 +12,7 @@
   },
   "author": {
     "name": "Achim Pieters",
-    "email": "achim.pieters@studiopieters.nl"
+    "email": "info@studiopieters.nl"
   },
   "contributors": [
     {
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/AchimPieters/HomeBridge-NeoPixel"
+    "url": "git://github.com/AchimPieters/HomeBridge-NeoPixel.git"
   },
   "scripts": {
     "lint": "grunt lint",

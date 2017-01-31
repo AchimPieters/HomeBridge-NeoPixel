@@ -1,8 +1,6 @@
-# HomeBridge-NeoPixel
+# homebridge-neopixel
 
-Homebridge-NeoPixel is based on homebridge-better-http-rgb.
-
-Supports NeoPixel Strips http(s) devices on the HomeBridge Platform and provides a readable
+Supports NeoPixel http(s) devices on the HomeBridge Platform and provides a readable
 callback for getting and setting the following characteristics to Homekit:
 
 * Characteristic.On
@@ -14,15 +12,15 @@ callback for getting and setting the following characteristics to Homekit:
 # Installation
 
 1. Install homebridge using: `npm install -g homebridge`
-2. Install HomeBridge-NeoPixel using: `npm install -g HomeBridge-NeoPixel`
-3. Update your configuration file.  See below for examples.
+2. Install homebridge-http using: `npm install -g homebridge-neopixel`
+3. Update your configuration file.  
 
 
-# Configuration
+# Configuration file
 
 ## Structure
 
-The following is an overview of the structure of your HomeBridge-NeoPixel accessory.
+The following is an overview of the structure of your HTTP-NEO accessory.
 
 Both `powerOn` and `powerOff` can either be a `string` or an `object`.  If a
 `string` is provided it is filled in as the `url` and the `body` will be blank.
@@ -79,92 +77,6 @@ can only read the settings, you may not change them.
     }
 
 
-## Examples
-
-### Full RGB Device
-
-    "accessories": [
-        {
-            "accessory": "HTTP-NEO",
-            "name": "HomeBridge-NeoPixel",
-
-            "switch": {
-                "status": "http://localhost/api/v1/status",
-                "powerOn": "http://localhost/api/v1/on",
-                "powerOff": "http://localhost/api/v1/off"
-            },
-
-            "brightness": {
-                "status": "http://localhost/api/v1/brightness",
-                "url": "http://localhost/api/v1/brightness/%s"
-            },
-
-            "color": {
-                "status": "http://localhost/api/v1/set",
-                "url": "http://localhost/api/v1/set/%s",
-                "brightness": true
-            }
-        }
-    ]
-
-### Single Color Light that only turns "off" and "on"
-
-    "accessories": [
-        {
-            "accessory": "HTTP-NEO",
-            "name": "Single Color Light",
-
-            "switch": {
-                "status": "http://localhost/api/v1/status",
-                "powerOn": "http://localhost/api/v1/on",
-                "powerOff": "http://localhost/api/v1/off"
-            }
-        }
-    ]
-
-### Single Color Light with Brightness
-
-    "accessories": [
-        {
-            "accessory": "HTTP-NEO",
-            "name": "Single Color Light",
-
-            "switch": {
-                "status": "http://localhost/api/v1/status",
-                "powerOn": "http://localhost/api/v1/on",
-                "powerOff": "http://localhost/api/v1/off"
-            },
-
-            "brightness": {
-                "status": "http://localhost/api/v1/brightness",
-                "url": "http://localhost/api/v1/brightness/%s"
-            }
-        }
-    ]
-
-### RGB Light without Brightness
-
-    "accessories": [
-        {
-            "accessory": "HTTP-NEO",
-            "name": "Single Color Light",
-
-            "switch": {
-                "status": "http://localhost/api/v1/status",
-                "powerOn": "http://localhost/api/v1/on",
-                "powerOff": "http://localhost/api/v1/off"
-            },
-
-            "color": {
-                "status": "http://localhost/api/v1/set",
-                "url": "http://localhost/api/v1/set/%s"
-            }
-        }
-    ]
-
-This normally will not occur, however, you may not want your application to
-display a "brightness" slider to the user.  In this case, you will want to
-remove the brightness component from the config.
 
 
 # Interfacing
@@ -176,3 +88,4 @@ string with no HTML markup.
 * `brightness.status` expects a number from 0 to 100.
 * `color.status` expects a 6-digit hexidemial number.
 
+Homebridge-NeoPixel is based on homebridge-better-http-rgb.
