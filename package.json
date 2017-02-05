@@ -1,6 +1,6 @@
 {
   "name": "homebridge-neopixel",
-  "version": "3.3.0",
+  "version": "3.3.2",
   "description": "Homebridge plugin to control a NeoPixel Strip.",
   "license": "ISC",
   "keywords": [
@@ -10,14 +10,9 @@
     "node": ">=0.12.0",
     "homebridge": ">=0.2.0"
   },
-  "author": {
-    "name": "Achim Pieters",
-    "email": "info@studiopieters.nl"
-  },
+  "author": "Achim Pieters <info@studiopieters.nl>",
   "contributors": [
-    {
-      "name": ""
-    }
+    ""
   ],
   "repository": {
     "type": "git",
@@ -40,5 +35,13 @@
     "grunt-contrib-jshint": "^0.11.3",
     "hap-nodejs": "0.0.3",
     "mocha": "^2.3.4"
+  },
+  "bugs": {
+    "url": "https://github.com/AchimPieters/HomeBridge-NeoPixel/issues"
+  },
+  "homepage": "https://github.com/AchimPieters/HomeBridge-NeoPixel#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   }
 }

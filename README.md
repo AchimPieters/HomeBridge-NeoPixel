@@ -8,6 +8,7 @@ callback for getting and setting the following characteristics to Homekit:
 * Characteristic.Hue
 * Characteristic.Saturation
 
+For more information visit: http://www.studiopieters.nl/apple-homebridge-neopixel-light/
 
 # Installation
 
