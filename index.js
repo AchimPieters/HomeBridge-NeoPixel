@@ -105,9 +105,9 @@ HTTP_NEO.prototype = {
         var informationService = new Service.AccessoryInformation();
 
         informationService
-            .setCharacteristic(Characteristic.Manufacturer, 'www.StudioPieters.nl')
-            .setCharacteristic(Characteristic.Model, 'homebridge-neopixel')
-            .setCharacteristic(Characteristic.SerialNumber, 'SP02022017');
+            .setCharacteristic(Characteristic.Manufacturer, "www.StudioPieters.nl")
+            .setCharacteristic(Characteristic.Model, "homebridge-neopixel")
+            .setCharacteristic(Characteristic.SerialNumber, "SP02022017");
 
         switch (this.service) {
             case 'Light':
