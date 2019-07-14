@@ -89,4 +89,11 @@ string with no HTML markup.
 * `brightness.status` expects a number from 0 to 100.
 * `color.status` expects a 6-digit hexidemial number.
 
+### Update: if you use Homebridge version 2, It is possible that you will get a ECONNRESET-bug. But the good nes is we have a possible fix:
+
+The error can be resolved by inserting `while (client.read() >= 0);`right before`client.stop();`
+
+As the previous code just cuts the communication (thats where the ECONNRESET comes from) without reading the remaining buffer, homebridge sees unsent packages and a broken channel. This is solvable by simply emptying the buffer and close it afterwards (as there is no other useful information in the communication).
+ 
+
 Homebridge-NeoPixel is based on homebridge-better-http-rgb.
